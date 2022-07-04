@@ -9,8 +9,8 @@
 ```sh
 1. Install XAMPP 
 2. Download the code as zip.
-3. Extract the zip file in the htdocs folder located in xampp folder. 
-4. Create database "lougehdb" in PHPMyAdmin and import the sql file provided.
-5. Open the XAMPP Control Panel and start Apache and MySQL.
-6. Now to run the code/system, open localhost/Lou-Geh-Supermarket-System/ in your browser.
+3. Extract the zip file in the xampp/htdocs folder. 
+4. Open the XAMPP Control Panel and start Apache and MySQL.
+5. Create database "lougehdb" in PHPMyAdmin and import the sql file provided.
+6.  Now to run the code/system, open localhost/Lou-Geh-Supermarket-System/ in your browser.
 ```
