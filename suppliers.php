@@ -1,5 +1,7 @@
 <?php include "db/config.php";
 
+$page = 'Suppliers';
+
 ?>
 
 
@@ -43,18 +45,18 @@
 
                             <div class="py-2">
                                 <label class="modal-label">Supplier Name</label>
-                                <input name="supplier_name">
+                                <input name="supplier_name" required>
                             </div>
 
                             <div class="py-2">
                                 <label class="modal-label">Address</label>
-                                <input name="supplier_address">
+                                <input name="supplier_address" required>
                             </div>
 
 
                             <div class="py-2">
                                 <label class="modal-label">Supplier Contact</label>
-                                <input name="supplier_contact">
+                                <input name="supplier_contact" required>
                             </div>
 
                             <div class="py-2 d-flex justify-content-end align-items-end">

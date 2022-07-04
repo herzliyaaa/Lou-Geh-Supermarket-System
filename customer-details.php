@@ -1,3 +1,6 @@
+<?php
+ $page = 'Customers';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +26,7 @@
     <!--Container Main start-->
     <div class="container-fluid">
         <div class="d-flex justify-content-start p-3">
-        <h1>CUSTOMERS</h1>
+        <h1>CUSTOMER DETAILS</h1>
         </div>
 
 
@@ -106,7 +109,7 @@
 
                                         <div class="modal-delete-container">
                                             <div class="modal-confirmation-header">
-                                                <p style="font-weight: 700;">Are you sure you want to delete item?</p>
+                                                <p style="font-weight: 700;">Are you sure you want to delete <?php echo $row['customer_firstname']; ?> <?php echo $row['customer_lastname']; ?>?</p>
                                             </div>
                                             <div class="modal-del-buttons">
                                                 <a class="primary-btn" id="delete-cancel" style="background-color:gray !important;">Cancel</a>

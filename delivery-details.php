@@ -1,6 +1,6 @@
 
 <?php
- $page = 'Sales';
+ $page = 'Delivery';
 ?>
 
 <!DOCTYPE html>
@@ -28,29 +28,29 @@
     <!--Container Main start-->
     <div class="container-fluid">
         <div class="d-flex justify-content-start p-3">
-            <h1>SALES DETAILS</h1>
+            <h1>DELIVERY DETAILS</h1>
         </div>
 
         <div>
             <div class="d-flex p-3 m-0 justify-content-center" style="flex-direction: column;">
-                <i class='bx bx-arrow-back bx-md' onclick="document.location.href='sales-transactions.php'" style="cursor: pointer;"></i>
+                <i class='bx bx-arrow-back bx-md' onclick="document.location.href='delivery-transactions.php'" style="cursor: pointer;"></i>
                 <?php include "db/config.php";
 
-                $sales_transaction_id = $_GET['sales_transaction_id'];
-                $querysql =  mysqli_query($conn, "SELECT * FROM `sales_transaction` WHERE sales_transaction_id = '$sales_transaction_id'");
+                $delivery_transaction_id = $_GET['delivery_transaction_id'];
+                $querysql =  mysqli_query($conn, "SELECT * FROM `delivery_transaction` WHERE delivery_transaction_id = '$delivery_transaction_id'");
                 while ($row = mysqli_fetch_array($querysql)) {
                 ?>
                     <div class='item-view-container'>
                         <div class="row m-2">
                             <form style="width: 40rem;">
                                 <div class="py-2">
-                                    <label class="modal-label">Sales Transaction ID</label>
-                                    <input name="sales_transaction_id" value="<?php echo $row['sales_transaction_id']; ?>" disabled>
+                                    <label class="modal-label">Delivery Transaction ID</label>
+                                    <input name="delivery_transaction_id" value="<?php echo $row['delivery_transaction_id']; ?>" disabled>
                                 </div>
 
                                 <div class="py-2">
-                                    <label class="modal-label">Customer Name</label>
-                                    <input name="customer_name" value="<?php echo $row['customer_name']; ?>" disabled>
+                                    <label class="modal-label">Supplier Name</label>
+                                    <input name="supplier_name" value="<?php echo $row['supplier_name']; ?>" disabled>
                                 </div>
 
                                 <div class="py-2">
@@ -95,11 +95,11 @@
 
                                     <div class="modal-delete-container">
                                         <div class="modal-confirmation-header">
-                                            <p style="font-weight: 700; text-align:center;">Are you sure you want to remove Sales Transaction No. <?php echo $row['sales_transaction_id']; ?> ?</p>
+                                            <p style="font-weight: 700; text-align:center;">Are you sure you want to remove Delivery Transaction No. <?php echo $row['delivery_transaction_id']; ?> ?</p>
                                         </div>
                                         <div class="modal-del-buttons">
                                             <a class="primary-btn" id="delete-cancel" style="background-color:gray !important;">Cancel</a>
-                                            <a class="primary-btn" style="background-color:red !important;" href="delete-sales.php?sales_transaction_id=<?php echo $row['sales_transaction_id']; ?>">Delete</a>
+                                            <a class="primary-btn" style="background-color:red !important;" href="delete-delivery.php?delivery_transaction_id=<?php echo $row['delivery_transaction_id']; ?>">Delete</a>
                                         </div>
                                     </div>
 

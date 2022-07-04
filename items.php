@@ -1,5 +1,5 @@
 <?php include "db/config.php"; 
- 
+ $page = 'Items';
 ?>
 
 
@@ -41,23 +41,23 @@
                         <form action="add-item.php" method="post" style="width: 20rem;">
                             <div class="py-2">
                                 <label class="modal-label">Barcode</label>
-                                <input name="barcode">
+                                <input name="barcode" required>
                             </div>
 
                             <div class="py-2">
                                 <label class="modal-label">Item Description</label>
-                                <input name="product_description">
+                                <input name="product_description" required>
                             </div>
 
                             <div class="py-2">
                                 <label class="modal-label">Item Quantity</label>
-                                <input name="quantity">
+                                <input name="quantity" required>
                             </div>
 
 
                             <div class="py-2">
                                 <label class="modal-label">Cost per Unit</label>
-                                <input name="cost_per_unit">
+                                <input name="cost_per_unit" required>
                             </div>
 
                             <div class="py-2 d-flex justify-content-end align-items-end">

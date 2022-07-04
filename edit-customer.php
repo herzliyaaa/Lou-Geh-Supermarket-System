@@ -1,3 +1,6 @@
+<?php
+ $page = 'Customers';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +26,7 @@
     <!--Container Main start-->
     <div class="container-fluid">
         <div class="d-flex justify-content-start p-3">
-            <h1>CUSTOMERS</h1>
+            <h1>EDIT CUSTOMER</h1>
         </div>
 
 
@@ -72,8 +75,8 @@
                             </div>
 
                             <div class="py-2 d-flex justify-content-end align-items-end gap-2">
-                            <a  href="item-details.php?barcode=<?php echo $row['barcode']; ?>" class="primary-btn" style="background-color:gray !important;">CANCEL</a>
-                                <button type="submit" name="edit_customer" class="primary-btn">EDIT</button>
+                            <a  href="customer-details.php?customer_id=<?php echo $row['customer_id']; ?>" class="primary-btn" style="background-color:gray !important;">CANCEL</a>
+                                <button type="submit" name="edit_customer" class="primary-btn">SAVE</button>
                                 </div>
 
                         </form>

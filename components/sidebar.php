@@ -22,10 +22,23 @@
         <div> <a href="#" class="nav_logo">
                 <i class='bx bx-cart nav_logo-icon'></i>
                 <span class="nav_logo-name">LG SUPERMARKET</span> </a>
-            <div class="nav_list"> <a href="items.php" class="nav_link active"> <i class='bx bx-basket nav_icon'></i> <span class="nav_name">Items</span> </a>
-                <a href="customers.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customers</span> </a>
-                <a href="suppliers.php" class="nav_link"> <i class='bx bx-group nav_icon'></i> <span class="nav_name">Suppliers</span> </a>
-                <a href="sales-transactions.php" class="nav_link"> <i class='bx bx-receipt nav_icon'></i> <span class="nav_name">Transactions</span> </a>
+            <div class="nav_list"> <a href="items.php" class="nav_link <?php if ($page == 'Items') {
+                                                                            echo 'active';
+                                                                        } ?>">
+
+                    <i class='bx bx-basket nav_icon'></i> <span class="nav_name">Items</span> </a>
+                <a href="customers.php" class="nav_link <?php if ($page == 'Customers') {
+                                                            echo 'active';
+                                                        } ?>"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customers</span> </a>
+                <a href="suppliers.php" class="nav_link <?php if ($page == 'Suppliers') {
+                                                            echo 'active';
+                                                        } ?>"> <i class='bx bx-group nav_icon'></i> <span class="nav_name">Suppliers</span> </a>
+                <a href="sales-transactions.php" class="nav_link <?php if ($page == 'Sales') {
+                                                                        echo 'active';
+                                                                    } ?>"> <i class='bx bx-receipt nav_icon'></i> <span class="nav_name">Sales</span> </a>
+                <a href="delivery-transactions.php" class="nav_link <?php if ($page == 'Delivery') {
+                                                                        echo 'active';
+                                                                    } ?>"> <i class='bx bx-package nav_icon'></i> <span class="nav_name">Delivery</span> </a>
             </div>
         </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Sign Out</span> </a>
     </nav>

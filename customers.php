@@ -1,5 +1,5 @@
 <?php include "db/config.php"; 
- 
+ $page = 'Customers';
 ?>
 
 
@@ -40,28 +40,28 @@
                         <form action="add-customer.php" method="post" style="width: 20rem;">
                             <div class="py-2">
                                 <label class="modal-label">Customer Firstname</label>
-                                <input name="customer_firstname">
+                                <input name="customer_firstname" required>
                             </div>
 
                             <div class="py-2">
                                 <label class="modal-label">Customer Middlename</label>
-                                <input name="customer_middlename">
+                                <input name="customer_middlename" required>
                             </div>
 
                             <div class="py-2">
                                 <label class="modal-label">Customer Lastname</label>
-                                <input name="customer_lastname">
+                                <input name="customer_lastname" required>
                             </div>
 
 
                             <div class="py-2">
                                 <label class="modal-label">Address</label>
-                                <input name="customer_address">
+                                <input name="customer_address" required>
                             </div>
 
                             <div class="py-2">
                                 <label class="modal-label">Contact Number</label>
-                                <input name="customer_contact">
+                                <input name="customer_contact" required>
                             </div>
 
                             <div class="py-2 d-flex justify-content-end align-items-end">

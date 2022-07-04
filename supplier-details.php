@@ -1,3 +1,7 @@
+<?php include "db/config.php";
+ $page = 'Suppliers';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,32 +27,11 @@
     <!--Container Main start-->
     <div class="container-fluid">
         <div class="d-flex justify-content-start p-3">
-            <h1>SUPPLIERS</h1>
+            <h1>SUPPLIER DETAILS</h1>
         </div>
 
 
 
-
-
-
-        <!-- start delete modal -->
-        <!-- <div id="deleteModal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="delete-modal-close">&times;</span>
-
-                <div class="modal-delete-container">
-                    <div class="modal-confirmation-header"><p style="font-weight: 700;">Are you sure you want to delete item?</p></div>
-                    <div class="modal-del-buttons">
-                        <button class="primary-btn">Cancel</button>
-                        <button class="primary-btn" href="delete-item.php?barcode=<?php echo $barcode; ?>">Delete</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-        <!-- end modal -->
 
         <div>
             <div class="d-flex p-3 m-0 justify-content-center" style="flex-direction: column;">
