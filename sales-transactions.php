@@ -42,7 +42,7 @@
                             <div class="py-2">
                                 <label class="modal-label">Customer Name</label>
                                 <select name="customer_name" required>
-                                    <option>---Select Customer---</option>
+                                    <option disabled>---Select Customer---</option>
                                     <?php
                                     $sql = "SELECT * FROM customers;";
                                     $query = mysqli_query($conn, $sql);
@@ -121,7 +121,7 @@
                                     <td><?php echo $row['barcode'] ?></td>
                                     <td><?php echo $row['quantity'] ?></td>
                                     <td><?php echo $row['cost_per_unit'] ?></td>
-                                    <td><?php echo $row['total'] ?></td>
+                                    <td>₱<?php echo $row['total'] ?></td>
                                     <td style="text-align: center;">
                                         <a class="edit-btn" href="sales-details.php?sales_transaction_id=<?php echo $row['sales_transaction_id'] ?>">
                                             <i class='bx bx-info-circle'></i>

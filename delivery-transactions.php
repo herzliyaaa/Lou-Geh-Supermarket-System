@@ -41,7 +41,7 @@
                             <div class="py-2">
                                 <label class="modal-label">Supplier Name</label>
                                 <select name="supplier_name" required>
-                                    <option>---Select Supplier---</option>
+                                    <option disabled>---Select Supplier---</option>
                                     <?php
                                     $sql = "SELECT * FROM suppliers;";
                                     $query = mysqli_query($conn, $sql);
@@ -122,7 +122,7 @@
                                     <td><?php echo $row['product_description'] ?></td>
                                     <td><?php echo $row['quantity'] ?></td>
                                     <td><?php echo $row['cost_per_unit'] ?></td>
-                                    <td><?php echo $row['total'] ?></td>
+                                    <td>₱<?php echo $row['total'] ?></td>
                                     <td style="text-align: center;">
                                         <a class="edit-btn" href="delivery-details.php?delivery_transaction_id=<?php echo $row['delivery_transaction_id'] ?>">
                                             <i class='bx bx-info-circle'></i>
